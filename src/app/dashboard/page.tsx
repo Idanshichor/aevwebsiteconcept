@@ -183,7 +183,7 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="font-serif text-3xl tracking-tight font-medium">aēv</span>
-            <span className="bg-brand-teal/10 text-brand-teal px-2 py-0.5 rounded-md text-[9px] font-bold tracking-widest uppercase ml-2">Demo</span>
+            <span className="bg-brand-teal/10 text-brand-teal px-2 py-0.5 rounded-md text-[9px] font-bold tracking-widest uppercase ml-2">App</span>
           </div>
           <div className="hidden md:flex gap-8 items-center text-sm font-medium tracking-wide text-brand-charcoal/60">
             <a href="#" className="flex items-center gap-2 text-brand-charcoal"><Home size={16} /> Home</a>
@@ -222,7 +222,7 @@ export default function Dashboard() {
             Milo
           </h1>
           <p className="font-sans text-base md:text-lg text-brand-charcoal/60 font-light flex items-center gap-3 mb-5">
-            German Shepherd <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 3.6 years old
+            German Shepherd <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 5.6 years old
           </p>
           
           <div className="flex flex-wrap justify-center gap-2.5 mb-2">
@@ -350,16 +350,16 @@ export default function Dashboard() {
                    <p className="font-sans text-[10px] uppercase tracking-[0.1em] font-bold text-brand-teal mb-3">Your Pet's Aging Trajectory</p>
                    <h2 className="font-serif text-3xl md:text-[38px] font-medium mb-4 text-brand-charcoal leading-tight">Aging 1.0 year slower.</h2>
                    <p className="font-sans text-brand-charcoal/80 leading-relaxed mb-6 font-light text-[16px]">
-                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">3.6 years</strong>, but his biological clock is ticking slower! He is currently aging <strong className="font-semibold text-[#4CAF50]">0.8–1.2 years slower</strong> than his actual calendar age.
+                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">5.6 years</strong>, but his biological clock is ticking slower! He is currently aging <strong className="font-semibold text-[#4CAF50]">0.8–1.2 years slower</strong> than his actual calendar age.
                    </p>
                    <div className="flex flex-wrap gap-4">
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Calendar Age</span>
-                       <span className="text-[16px] font-semibold text-brand-charcoal">3.6 years</span>
+                       <span className="text-[16px] font-semibold text-brand-charcoal">5.6 years</span>
                      </div>
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Biological Age</span>
-                       <span className="text-[16px] font-semibold text-brand-teal">~2.6 years</span>
+                       <span className="text-[16px] font-semibold text-brand-teal">~4.6 years</span>
                      </div>
                    </div>
                 </div>
