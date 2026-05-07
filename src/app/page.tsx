@@ -2,7 +2,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { ChevronRight, ArrowRight, Check, Activity, Users, ShieldCheck, Heart } from "lucide-react"
+import { ChevronRight, ArrowRight, Check, Activity, Users, ShieldCheck, Heart, Shield } from "lucide-react"
 
 // --- Components ---
 
@@ -513,7 +513,7 @@ export default function Page() {
             <a href="#about" className="hover:text-brand-teal transition-colors">About</a>
             <a href="#how-it-works" className="hover:text-brand-teal transition-colors">How it works</a>
           </div>
-          <a href="/waitlist" className="bg-brand-charcoal text-brand-oat px-6 py-2.5 rounded-full font-medium text-sm hover:bg-opacity-90 transition-all">
+          <a href="/dashboard" className="bg-brand-charcoal text-brand-oat px-6 py-2.5 rounded-full font-medium text-sm hover:bg-opacity-90 transition-all">
             Log in
           </a>
         </div>
@@ -541,7 +541,7 @@ export default function Page() {
             </div>
           </div>
           
-          <div className="relative w-full max-w-sm self-end mt-16 lg:mt-0 mb-16 lg:mb-0">
+          <div className="relative w-full max-w-sm self-end mt-16 lg:mt-0 mb-24 lg:mb-12 z-20">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="w-full">
               <GlassCard className="p-6 bg-white/90 border border-white shadow-xl backdrop-blur-xl">
                 <div className="flex items-center gap-4 mb-4">
@@ -562,12 +562,12 @@ export default function Page() {
           </div>
         </div>
         
-        {/* Specialist Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-brand-oat flex flex-col md:flex-row items-end justify-center md:justify-start gap-4 md:gap-8 pb-6 px-4 md:px-12 z-10">
-           <p className="text-brand-charcoal font-sans text-sm md:text-base font-medium tracking-wide">Built with leading veterinary specialists from</p>
-           <div className="flex items-center gap-8">
-             <img src="/mock/pennvet.png" alt="PennVet Logo" className="h-8 md:h-10 object-contain brightness-0 opacity-80" />
-           </div>
+        {/* Credibility Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-brand-oat via-brand-oat/80 to-transparent flex items-end justify-center pb-8 px-4 md:px-12 z-10 pointer-events-none">
+           <p className="text-brand-charcoal font-sans text-sm md:text-base tracking-wide font-medium text-center max-w-3xl drop-shadow-sm pointer-events-auto">
+             <strong className="font-bold uppercase tracking-widest text-brand-charcoal mr-2 text-xs md:text-sm">From Vets, For Pets</strong>
+             <span>— Backed by 100+ years of combined experience across general practice and veterinary academia.</span>
+           </p>
         </div>
 
       </section>

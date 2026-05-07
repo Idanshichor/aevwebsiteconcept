@@ -4,6 +4,10 @@
   --color-brand-oat: #F9F7F2;
   --color-brand-charcoal: #2C2C2C;
   --color-brand-teal: #168688;
+  
+  --color-status-green: #4CAF50;
+  --color-status-yellow: #F59E0B;
+  --color-status-red: #EF4444;
 
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aevark Founding Cohort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-oat': '#F9F7F2',
+                        'brand-charcoal': '#2C2C2C',
+                        'brand-teal': '#168688',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            width: 8.5in;
+            height: 11in;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F7F2;
+            color: #2C2C2C;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-section {
+            background-image: url('public/mock/hero_final_4.png');
+            background-size: cover;
+            background-position: 75% center;
+            height: 4.5in;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(44,44,44,0.1), rgba(44,44,44,0.85));
+        }
+        .editorial-line {
+            width: 40px;
+            height: 2px;
+            background-color: #168688;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- HERO SECTION -->
+    <div class="hero-section flex flex-col justify-between p-12 text-white shrink-0">
+        <div class="hero-overlay z-0"></div>
+        
+        <div class="z-10 flex justify-between items-start w-full">
+            <div class="font-serif text-5xl tracking-tight font-medium">aēv</div>
+            <div class="font-sans text-[10px] font-bold tracking-[0.2em] uppercase mt-3">
+                Founding Cohort Invitation
+            </div>
+        </div>
+
+        <div class="z-10 mb-2">
+            <h1 class="font-serif text-[3.5rem] font-medium leading-[1.1] mb-6 italic">
+                More Good Years Together.
+            </h1>
+            <p class="font-sans text-lg opacity-90 font-light max-w-lg leading-relaxed">
+                Advanced longevity tracking for the pets who hold us together. Secure your priority access to the Founding Cohort.
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTENT SECTION -->
+    <div class="p-12 flex flex-col flex-1 justify-between bg-brand-oat">
+        
+        <div>
+            <div class="editorial-line mt-2"></div>
+            <h2 class="font-serif text-[2.25rem] font-medium mb-10 text-brand-charcoal leading-tight">
+                What you're getting.
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-x-12 gap-y-10">
+                <!-- Item 1 -->
+                <div>
+                    <h4 class="font-sans font-semibold text-base mb-2 text-brand-charcoal tracking-wide">01 — Two Comprehensive Panels</h4>
+                    <p class="font-sans text-[13px] text-brand-charcoal/80 leading-relaxed font-light">Tracking 90+ health signals per year, catching subtle changes before symptoms appear.</p>
+                </div>
+                <!-- Item 2 -->
+                <div>
+                    <h4 class="font-sans font-semibold text-base mb-2 text-brand-charcoal tracking-wide">02 — Full Physical Exam</h4>
+                    <p class="font-sans text-[13px] text-brand-charcoal/80 leading-relaxed font-light">Nose-to-tail veterinary evaluation including a thorough oral health assessment.</p>
+                </div>
+                <!-- Item 3 -->
+                <div>
+                    <h4 class="font-sans font-semibold text-base mb-2 text-brand-charcoal tracking-wide">03 — Behavioral Tracking</h4>
+                    <p class="font-sans text-[13px] text-brand-charcoal/80 leading-relaxed font-light">Validated at-home questionnaires to catch hidden signs of aging and anxiety.</p>
+                </div>
+                <!-- Item 4 -->
+                <div>
+                    <h4 class="font-sans font-semibold text-base mb-2 text-brand-charcoal tracking-wide">04 — AI-Powered Clinical Report</h4>
+                    <p class="font-sans text-[13px] text-brand-charcoal/80 leading-relaxed font-light">Health Potential Metrics and personalized recommendations based on the latest research.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRICING & CTA -->
+        <div class="mt-auto border-t border-brand-charcoal/20 pt-8 flex justify-between items-start">
+            <div class="w-2/3 pr-10">
+                <p class="font-sans font-semibold uppercase tracking-[0.2em] text-brand-teal text-[10px] mb-3">The Membership</p>
+                <h3 class="font-serif text-[28px] font-medium mb-3 text-brand-charcoal">aēv Longevity Package</h3>
+                <p class="font-sans text-sm text-brand-charcoal/70 leading-relaxed font-light">
+                    Founding members receive a special discounted rate and priority access when we launch. Be the first to give your pet the care they deserve. Limited spots available.
+                </p>
+            </div>
+            
+            <div class="w-1/3 text-right">
+                <div class="flex flex-col items-end">
+                    <span class="font-serif text-[56px] line-through text-brand-charcoal/50 font-light leading-none relative">
+                        $699
+                        <!-- Optional custom line-through if standard doesn't look print-like -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-[110%] h-[2px] bg-brand-charcoal/50 rotate-[-10deg]"></div>
+                        </div>
+                    </span>
+                    <span class="font-sans text-[11px] text-brand-charcoal/50 mt-3 tracking-widest uppercase">/ year / pet</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="text-center pt-8 pb-2">
+            <p class="font-sans text-[9px] text-brand-charcoal/40 uppercase tracking-widest">
+                Learn more and join the waitlist at aevark.com
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
