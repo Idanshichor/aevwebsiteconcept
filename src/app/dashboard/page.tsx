@@ -208,7 +208,7 @@ export default function Dashboard() {
         {/* Centered Avatar */}
         <div className="relative z-10 mb-6 group cursor-pointer">
            <div className="w-64 h-64 md:w-[420px] md:h-[420px] rounded-full border-[8px] md:border-[12px] border-white shadow-2xl overflow-hidden bg-brand-charcoal transition-transform duration-500 group-hover:scale-[1.02]">
-              <img src="/mock/cat_profile.jpeg" alt="Milo" className="w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105" />
+              <img src="/mock/german_shepherd.jpeg" alt="Milo" className="w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105" />
            </div>
            {/* Edit Photo Badge */}
            <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-white hover:bg-brand-oat transition-colors w-14 h-14 md:w-20 md:h-20 rounded-full flex items-center justify-center shadow-lg border-[4px] md:border-[6px] border-white z-20">
@@ -222,18 +222,18 @@ export default function Dashboard() {
             Milo
           </h1>
           <p className="font-sans text-base md:text-lg text-brand-charcoal/60 font-light flex items-center gap-3 mb-5">
-            Maine Coon <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 8.5 years old
+            German Shepherd <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 3.6 years old
           </p>
           
           <div className="flex flex-wrap justify-center gap-2.5 mb-2">
              <div className="bg-white border border-brand-charcoal/5 px-4 py-1.5 rounded-full text-[12px] font-medium text-brand-charcoal/70 flex items-center gap-1.5 shadow-sm">
-                <Activity size={14} className="text-[#4CAF50]" /> 5.1 kg
+                <Activity size={14} className="text-[#4CAF50]" /> 32 kg
              </div>
              <div className="bg-white border border-brand-charcoal/5 px-4 py-1.5 rounded-full text-[12px] font-medium text-brand-charcoal/70 flex items-center gap-1.5 shadow-sm">
                 <Heart size={14} className="text-brand-teal" /> Neutered & Healthy
              </div>
              <div className="bg-white border border-brand-charcoal/5 px-4 py-1.5 rounded-full text-[12px] font-medium text-brand-charcoal/70 flex items-center gap-1.5 shadow-sm">
-                <Clock size={14} className="text-[#F59E0B]" /> Just Started
+                <Clock size={14} className="text-[#F59E0B]" /> 3 weeks with aēv
              </div>
           </div>
         </div>
@@ -251,40 +251,47 @@ export default function Dashboard() {
              </div>
              <div>
                <p className="font-sans text-[10px] uppercase tracking-widest font-bold text-brand-teal mb-1">Care Arc • Next Steps</p>
-               <h3 className="font-serif text-[22px] font-medium leading-tight">Milo's First Visit</h3>
+               <h3 className="font-serif text-[22px] font-medium leading-tight">Milo's Results Are In</h3>
              </div>
            </div>
 
            {/* Timeline */}
            <div className="relative z-10 flex-1 w-full flex items-center justify-between px-2 md:px-8 pb-4 md:pb-0">
               <div className="absolute top-1/2 left-6 right-6 h-[2px] bg-white/10 -translate-y-1/2 z-0 rounded-full"></div>
-              <div className="absolute top-1/2 left-6 h-[2px] bg-brand-teal -translate-y-1/2 z-0 rounded-full w-[40%]"></div>
-              
+              <div className="absolute top-1/2 left-6 h-[2px] bg-brand-teal -translate-y-1/2 z-0 rounded-full w-[95%]"></div>
+
               <div className="relative z-10 flex flex-col items-center gap-2 group cursor-pointer">
                  <div className="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center shadow-[0_0_0_6px_#2C2C2C]">
                     <CheckCircle2 size={16} />
                  </div>
                  <span className="text-[11px] font-semibold text-white/90 hidden md:block absolute -bottom-6 whitespace-nowrap">Questionnaire</span>
               </div>
-              
+
+              <div className="relative z-10 flex flex-col items-center gap-2 group cursor-pointer">
+                 <div className="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center shadow-[0_0_0_6px_#2C2C2C]">
+                    <CheckCircle2 size={16} />
+                 </div>
+                 <span className="text-[11px] font-semibold text-white/90 hidden md:block absolute -bottom-6 whitespace-nowrap">Vet Visit</span>
+              </div>
+
+              <div className="relative z-10 flex flex-col items-center gap-2 group cursor-pointer">
+                 <div className="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center shadow-[0_0_0_6px_#2C2C2C]">
+                    <CheckCircle2 size={16} />
+                 </div>
+                 <span className="text-[11px] font-semibold text-white/90 hidden md:block absolute -bottom-6 whitespace-nowrap">Results In</span>
+              </div>
+
               <div className="relative z-10 flex flex-col items-center gap-2 group cursor-pointer">
                  <div className="w-8 h-8 rounded-full bg-brand-charcoal border-2 border-brand-teal text-brand-teal flex items-center justify-center shadow-[0_0_0_6px_#2C2C2C]">
                     <span className="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
                  </div>
-                 <span className="text-[11px] font-semibold text-brand-teal hidden md:block absolute -bottom-6 whitespace-nowrap">Prep Guide</span>
-              </div>
-
-              <div className="relative z-10 flex flex-col items-center gap-2 opacity-40">
-                 <div className="w-8 h-8 rounded-full bg-white/10 border-2 border-white/20 text-white flex items-center justify-center shadow-[0_0_0_6px_#2C2C2C]">
-                    <span className="text-[12px] font-bold">3</span>
-                 </div>
-                 <span className="text-[11px] font-medium text-white hidden md:block absolute -bottom-6 whitespace-nowrap">Appointment</span>
+                 <span className="text-[11px] font-semibold text-brand-teal hidden md:block absolute -bottom-6 whitespace-nowrap">Act on Insights</span>
               </div>
            </div>
-           
+
            <div className="relative z-10 shrink-0 w-full md:w-auto mt-2 md:mt-0">
              <button className="w-full md:w-auto bg-brand-teal hover:bg-brand-teal/90 text-white rounded-full px-6 py-3 text-[13px] font-semibold flex items-center justify-center gap-2 transition-colors shadow-sm">
-                Open Guide <ArrowRight size={14} />
+                View Insights <ArrowRight size={14} />
              </button>
            </div>
         </div>
@@ -332,7 +339,7 @@ export default function Dashboard() {
                    
                    <div className="text-center flex flex-col items-center relative z-10 mb-2">
                       <span className="block font-sans text-[10px] uppercase tracking-[0.15em] text-brand-charcoal/50 font-bold mb-1">Bio Age</span>
-                      <span className="block font-serif text-[48px] font-light text-brand-teal leading-none">6.5<span className="text-2xl font-sans text-brand-charcoal/40 ml-1">yr</span></span>
+                      <span className="block font-serif text-[48px] font-light text-brand-teal leading-none">4.6<span className="text-2xl font-sans text-brand-charcoal/40 ml-1">yr</span></span>
                       <div className="mt-2 bg-[#4CAF50]/10 text-[#4CAF50] px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#4CAF50]/20">
                          Optimal
                       </div>
@@ -341,18 +348,18 @@ export default function Dashboard() {
 
                 <div>
                    <p className="font-sans text-[10px] uppercase tracking-[0.1em] font-bold text-brand-teal mb-3">Your Pet's Aging Trajectory</p>
-                   <h2 className="font-serif text-3xl md:text-[38px] font-medium mb-4 text-brand-charcoal leading-tight">Aging 1.5 years slower.</h2>
+                   <h2 className="font-serif text-3xl md:text-[38px] font-medium mb-4 text-brand-charcoal leading-tight">Aging 1.0 year slower.</h2>
                    <p className="font-sans text-brand-charcoal/80 leading-relaxed mb-6 font-light text-[16px]">
-                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">8 years</strong>, but his biological clock is ticking much slower! He is currently aging <strong className="font-semibold text-[#4CAF50]">1.3–1.7 years slower</strong> than his actual calendar age.
+                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">3.6 years</strong>, but his biological clock is ticking slower! He is currently aging <strong className="font-semibold text-[#4CAF50]">0.8–1.2 years slower</strong> than his actual calendar age.
                    </p>
                    <div className="flex flex-wrap gap-4">
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Calendar Age</span>
-                       <span className="text-[16px] font-semibold text-brand-charcoal">8 years</span>
+                       <span className="text-[16px] font-semibold text-brand-charcoal">3.6 years</span>
                      </div>
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Biological Age</span>
-                       <span className="text-[16px] font-semibold text-brand-teal">~6.5 years</span>
+                       <span className="text-[16px] font-semibold text-brand-teal">~2.6 years</span>
                      </div>
                    </div>
                 </div>
@@ -377,7 +384,7 @@ export default function Dashboard() {
                                  <span className="text-[#4CAF50] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#4CAF50]/30 bg-white">Mobility</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                Milo's joint health signals are incredible. Adding a short 10-minute active play session or stroll in the afternoon will keep his mobility exactly where it is.
+                                Milo's hip and elbow signals are excellent for a German Shepherd his age. Keep up the daily structured walks and add controlled off-leash time on soft ground — it protects the joints he'll need for years to come.
                               </p>
                            </div>
                         </div>
@@ -395,25 +402,25 @@ export default function Dashboard() {
                                  <span className="text-[#5889B8] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#5889B8]/30 bg-white">Nutrition</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                His metabolic rate is perfect. To keep his digestion optimal, try splitting his current daily food into 3 smaller portions to feed throughout the day.
+                                His metabolic rate is perfect. Deep-chested breeds like German Shepherds carry elevated bloat (GDV) risk — split his daily food into 2–3 portions and avoid heavy exercise for an hour after meals.
                               </p>
                            </div>
                         </div>
                      </div>
                      
-                     {/* Insight 3: Hydration */}
+                     {/* Insight 3: Joints */}
                      <div className="bg-[#0288D1]/[0.02] rounded-[1.5rem] p-6 relative overflow-hidden group hover:shadow-sm transition-shadow border border-[#0288D1]/20">
                         <div className="relative z-10 flex flex-col xl:flex-row gap-5 items-start">
                            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-sm border border-[#0288D1]/30 transition-transform text-[#0288D1] rotate-3 group-hover:rotate-6">
-                              <Droplets size={24} />
+                              <Shield size={24} />
                            </div>
                            <div>
                               <div className="flex flex-wrap items-center gap-2 mb-2">
-                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Protect his kidneys.</h4>
-                                 <span className="text-[#0288D1] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#0288D1]/30 bg-white">Hydration</span>
+                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Protect his hips.</h4>
+                                 <span className="text-[#0288D1] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#0288D1]/30 bg-white">Joints</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                Maine Coons are prone to kidney issues as they age. Adding a flowing water fountain will naturally encourage him to drink more consistently.
+                                German Shepherds are prone to hip and elbow dysplasia. Keep him lean (BCS 4-5/9) and start a daily glucosamine + omega-3 supplement now — it's far easier to protect joints than to repair them.
                               </p>
                            </div>
                         </div>
@@ -520,18 +527,18 @@ export default function Dashboard() {
               <GlassCard className="p-8">
                  <h4 className="font-sans text-[11px] uppercase tracking-widest text-brand-teal font-bold mb-6">Key Findings</h4>
                  <ul className="space-y-4">
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Thyroid function stable on current Methimazole dose</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Hip & elbow joint markers all within optimal range</li>
                    <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Kidney values (BUN, Creatinine, SDMA) within normal limits</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Mild elevation in ALT, likely secondary to medication</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Weight stable at 5.1kg</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Mild elevation in ALT — within reference range, worth tracking</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Weight stable at 32 kg, body condition score 5/9</li>
                  </ul>
               </GlassCard>
               <GlassCard className="p-8">
                  <h4 className="font-sans text-[11px] uppercase tracking-widest text-brand-teal font-bold mb-6">Recommendations</h4>
                  <ul className="space-y-4">
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span> Continue current Methimazole 2.5mg BID</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span> Recheck T4 and chemistry panel in 6 months</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span> Monitor ALT trend — consider dose adjustment if rising</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span> Begin daily glucosamine + omega-3 joint supplement</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span> Recheck full chemistry panel in 6 months</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span> Monitor ALT trend — flag if rising at next panel</li>
                    <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span> Dental cleaning recommended within next 3 months</li>
                  </ul>
               </GlassCard>
@@ -544,11 +551,11 @@ export default function Dashboard() {
                 icon={Heart}
                 good={5} attention={0} action={0}
                 signals={[
-                  { name: "Albumin", value: 3.2, unit: "g/dL", status: "OPTIMAL", min: 2.1, max: 4.3, aevMin: 2.8, aevMax: 3.9 },
-                  { name: "Alk Phos", value: 34, unit: "IU/L", status: "OPTIMAL", min: -32.8, max: 168.8, aevMin: 14, aevMax: 110 },
-                  { name: "ALT (SGPT)", value: 42, unit: "IU/L", status: "OPTIMAL", min: -19.8, max: 149.8, aevMin: 20, aevMax: 100 },
-                  { name: "AST (SGOT)", value: 23, unit: "IU/L", status: "OPTIMAL", min: -0.3, max: 81.3, aevMin: 10, aevMax: 50 },
-                  { name: "Total T4", value: 1.6, unit: "ug/dL", status: "OPTIMAL", min: -0.2, max: 5.0, aevMin: 1.0, aevMax: 3.0 }
+                  { name: "Albumin", value: 3.5, unit: "g/dL", status: "OPTIMAL", min: 2.0, max: 5.0, aevMin: 2.7, aevMax: 4.0 },
+                  { name: "Alk Phos", value: 65, unit: "IU/L", status: "OPTIMAL", min: 0, max: 200, aevMin: 20, aevMax: 130 },
+                  { name: "ALT (SGPT)", value: 72, unit: "IU/L", status: "ATTENTION", min: 0, max: 150, aevMin: 21, aevMax: 65 },
+                  { name: "AST (SGOT)", value: 32, unit: "IU/L", status: "OPTIMAL", min: 0, max: 80, aevMin: 15, aevMax: 55 },
+                  { name: "Total T4", value: 2.2, unit: "ug/dL", status: "OPTIMAL", min: 0.0, max: 4.5, aevMin: 1.0, aevMax: 3.5 }
                 ]}
               />
               <PillarAccordion 
