@@ -222,7 +222,7 @@ export default function Dashboard() {
             Milo
           </h1>
           <p className="font-sans text-base md:text-lg text-brand-charcoal/60 font-light flex items-center gap-3 mb-5">
-            German Shepherd <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 5.6 years old
+            German Shepherd <span className="w-1 h-1 rounded-full bg-brand-charcoal/20"></span> 3.4 years old
           </p>
           
           <div className="flex flex-wrap justify-center gap-2.5 mb-2">
@@ -333,33 +333,33 @@ export default function Dashboard() {
                      <line x1="50" y1="20" x2="50" y2="24" stroke="currentColor" strokeWidth="2" className="text-brand-charcoal/20" strokeLinecap="round" />
                      <text x="50" y="16" fontSize="4" fill="currentColor" className="text-brand-charcoal/30 font-sans font-bold tracking-widest" textAnchor="middle">AVG</text>
 
-                     {/* Indicator Dot (At 45 degrees left of center, optimal zone) */}
-                     <circle cx="21.7" cy="31.7" r="4.5" fill="white" stroke="#4CAF50" strokeWidth="2.5" className="shadow-lg drop-shadow-md" />
+                     {/* Indicator Dot (At 45 degrees right of center, elevated zone) */}
+                     <circle cx="78.3" cy="31.7" r="4.5" fill="white" stroke="#F59E0B" strokeWidth="2.5" className="shadow-lg drop-shadow-md" />
                    </svg>
                    
                    <div className="text-center flex flex-col items-center relative z-10 mb-2">
                       <span className="block font-sans text-[10px] uppercase tracking-[0.15em] text-brand-charcoal/50 font-bold mb-1">Bio Age</span>
-                      <span className="block font-serif text-[48px] font-light text-brand-teal leading-none">4.6<span className="text-2xl font-sans text-brand-charcoal/40 ml-1">yr</span></span>
-                      <div className="mt-2 bg-[#4CAF50]/10 text-[#4CAF50] px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#4CAF50]/20">
-                         Optimal
+                      <span className="block font-serif text-[48px] font-light text-[#F59E0B] leading-none">3.65<span className="text-2xl font-sans text-brand-charcoal/40 ml-1">yr</span></span>
+                      <div className="mt-2 bg-[#F59E0B]/10 text-[#F59E0B] px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/20">
+                         Elevated
                       </div>
                    </div>
                 </div>
 
                 <div>
                    <p className="font-sans text-[10px] uppercase tracking-[0.1em] font-bold text-brand-teal mb-3">Your Pet's Aging Trajectory</p>
-                   <h2 className="font-serif text-3xl md:text-[38px] font-medium mb-4 text-brand-charcoal leading-tight">Aging 1.0 year slower.</h2>
+                   <h2 className="font-serif text-3xl md:text-[38px] font-medium mb-4 text-brand-charcoal leading-tight">Aging 3 months faster.</h2>
                    <p className="font-sans text-brand-charcoal/80 leading-relaxed mb-6 font-light text-[16px]">
-                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">5.6 years</strong>, but his biological clock is ticking slower! He is currently aging <strong className="font-semibold text-[#4CAF50]">0.8–1.2 years slower</strong> than his actual calendar age.
+                     Milo's calendar age is <strong className="font-semibold text-brand-charcoal">3.4 years</strong>, but his biological clock is running ahead by about <strong className="font-semibold text-[#F59E0B]">3 months</strong> — small, early signals that daily habits can reverse before they grow.
                    </p>
                    <div className="flex flex-wrap gap-4">
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Calendar Age</span>
-                       <span className="text-[16px] font-semibold text-brand-charcoal">5.6 years</span>
+                       <span className="text-[16px] font-semibold text-brand-charcoal">3.4 years</span>
                      </div>
                      <div className="bg-white px-5 py-3 rounded-xl shadow-sm border border-brand-charcoal/5 hover:-translate-y-0.5 transition-transform">
                        <span className="block text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-bold mb-1">Biological Age</span>
-                       <span className="text-[16px] font-semibold text-brand-teal">~4.6 years</span>
+                       <span className="text-[16px] font-semibold text-[#F59E0B]">~3.65 years</span>
                      </div>
                    </div>
                 </div>
@@ -380,11 +380,11 @@ export default function Dashboard() {
                            </div>
                            <div>
                               <div className="flex flex-wrap items-center gap-2 mb-2">
-                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Keep the momentum going!</h4>
-                                 <span className="text-[#4CAF50] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#4CAF50]/30 bg-white">Mobility</span>
+                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Start daily glucosamine + omega-3.</h4>
+                                 <span className="text-[#4CAF50] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#4CAF50]/30 bg-white">Joints</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                Milo's hip and elbow signals are excellent for a German Shepherd his age. Keep up the daily structured walks and add controlled off-leash time on soft ground — it protects the joints he'll need for years to come.
+                                Mild low-grade inflammation markers (CRP, WBC) are tracking above ideal — a known early signal of joint stress in German Shepherds. A daily glucosamine + omega-3 routine now will protect his hips and elbows long before symptoms appear.
                               </p>
                            </div>
                         </div>
@@ -398,11 +398,11 @@ export default function Dashboard() {
                            </div>
                            <div>
                               <div className="flex flex-wrap items-center gap-2 mb-2">
-                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Smooth, steady energy.</h4>
+                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Split his food into 3 meals.</h4>
                                  <span className="text-[#5889B8] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#5889B8]/30 bg-white">Nutrition</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                His metabolic rate is perfect. Deep-chested breeds like German Shepherds carry elevated bloat (GDV) risk — split his daily food into 2–3 portions and avoid heavy exercise for an hour after meals.
+                                Triglyceride and cPL are slightly elevated — his pancreas is working harder than ideal. Splitting his daily food into 3 smaller meals (and skipping heavy exercise for an hour after) eases the load and lowers GDV/bloat risk for deep-chested breeds.
                               </p>
                            </div>
                         </div>
@@ -416,11 +416,11 @@ export default function Dashboard() {
                            </div>
                            <div>
                               <div className="flex flex-wrap items-center gap-2 mb-2">
-                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Protect his hips.</h4>
-                                 <span className="text-[#0288D1] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#0288D1]/30 bg-white">Joints</span>
+                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Recheck in 6 months.</h4>
+                                 <span className="text-[#0288D1] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#0288D1]/30 bg-white">Tracking</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                German Shepherds are prone to hip and elbow dysplasia. Keep him lean (BCS 4-5/9) and start a daily glucosamine + omega-3 supplement now — it's far easier to protect joints than to repair them.
+                                These signals are early and reversible. Re-running the panel in 6 months will tell us whether the supplement, meal split, and dental routine are pulling his biological age back down toward — or below — his calendar age.
                               </p>
                            </div>
                         </div>
@@ -434,11 +434,11 @@ export default function Dashboard() {
                            </div>
                            <div>
                               <div className="flex flex-wrap items-center gap-2 mb-2">
-                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Keep that smile bright.</h4>
+                                 <h4 className="font-serif text-[22px] font-medium text-brand-charcoal leading-tight">Add a daily dental chew.</h4>
                                  <span className="text-[#F59E0B] px-2 py-0.5 rounded text-[9px] font-bold tracking-widest uppercase border border-[#F59E0B]/30 bg-white">Dental</span>
                               </div>
                               <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">
-                                We noticed a slight uptick in inflammatory markers linked to early plaque buildup. Integrating a daily dental chew will stop it in its tracks.
+                                His bloodwork flagged early plaque buildup — a low-grade inflammatory pattern consistent with the start of periodontal disease. A daily VOHC-approved dental chew (plus brushing twice a week) stops it before it costs a cleaning under anesthesia.
                               </p>
                            </div>
                         </div>
@@ -462,17 +462,17 @@ export default function Dashboard() {
                 
                 <div className="flex justify-between items-end mb-6 px-1">
                     <div className="text-center flex flex-col items-center">
-                        <span className="font-sans text-[38px] font-light text-[#4CAF50] mb-1 leading-none group-hover:scale-105 transition-transform">68</span>
+                        <span className="font-sans text-[38px] font-light text-[#4CAF50] mb-1 leading-none group-hover:scale-105 transition-transform">82</span>
                         <div className="w-6 h-0.5 bg-[#4CAF50] mb-2 rounded-full"></div>
                         <CheckCircle2 size={14} className="text-[#4CAF50]" />
                     </div>
                     <div className="text-center flex flex-col items-center">
-                        <span className="font-sans text-[38px] font-light text-[#F59E0B] mb-1 leading-none group-hover:scale-105 transition-transform">18</span>
+                        <span className="font-sans text-[38px] font-light text-[#F59E0B] mb-1 leading-none group-hover:scale-105 transition-transform">8</span>
                         <div className="w-6 h-0.5 bg-[#F59E0B] mb-2 rounded-full"></div>
                         <AlertTriangle size={14} className="text-[#F59E0B]" />
                     </div>
                     <div className="text-center flex flex-col items-center">
-                        <span className="font-sans text-[38px] font-light text-brand-charcoal/30 mb-1 leading-none group-hover:scale-105 transition-transform">8</span>
+                        <span className="font-sans text-[38px] font-light text-brand-charcoal/30 mb-1 leading-none group-hover:scale-105 transition-transform">4</span>
                         <div className="w-6 h-0.5 bg-brand-charcoal/20 mb-2 rounded-full"></div>
                         <MoreHorizontal size={14} className="text-brand-charcoal/30" />
                     </div>
@@ -527,19 +527,19 @@ export default function Dashboard() {
               <GlassCard className="p-8">
                  <h4 className="font-sans text-[11px] uppercase tracking-widest text-brand-teal font-bold mb-6">Key Findings</h4>
                  <ul className="space-y-4">
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Hip & elbow joint markers all within optimal range</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Kidney values (BUN, Creatinine, SDMA) within normal limits</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Mild elevation in ALT — within reference range, worth tracking</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Weight stable at 32 kg, body condition score 5/9</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Low-grade inflammation pattern (CRP, WBC) — early joint stress signal</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Triglyceride and cPL slightly elevated — pancreas working harder than ideal</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-[#F59E0B] mt-1"><Activity size={16} /></span> Inflammatory markers consistent with early plaque buildup</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="text-brand-teal mt-1"><CheckCircle2 size={16} /></span> Kidney, liver, and metabolic panels otherwise within normal limits</li>
                  </ul>
               </GlassCard>
               <GlassCard className="p-8">
                  <h4 className="font-sans text-[11px] uppercase tracking-widest text-brand-teal font-bold mb-6">Recommendations</h4>
                  <ul className="space-y-4">
                    <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span> Begin daily glucosamine + omega-3 joint supplement</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span> Recheck full chemistry panel in 6 months</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span> Monitor ALT trend — flag if rising at next panel</li>
-                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span> Dental cleaning recommended within next 3 months</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span> Split daily food into 3 meals — skip heavy exercise 1 hr post-meal</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span> Add a daily VOHC-approved dental chew + brushing 2× weekly</li>
+                   <li className="flex gap-3 text-[15px] text-brand-charcoal/80"><span className="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span> Recheck inflammation + lipid panel in 6 months</li>
                  </ul>
               </GlassCard>
            </div>
@@ -563,22 +563,22 @@ export default function Dashboard() {
                 icon={Utensils}
                 good={3} attention={1} action={0}
                 signals={[
-                  { name: "Cholesterol", value: 107, unit: "mg/dL", status: "OPTIMAL", min: 22, max: 394, aevMin: 110, aevMax: 300 },
+                  { name: "Cholesterol", value: 215, unit: "mg/dL", status: "OPTIMAL", min: 22, max: 394, aevMin: 110, aevMax: 300 },
                   { name: "Glucose", value: 104, unit: "mg/dL", status: "OPTIMAL", min: 32, max: 202, aevMin: 70, aevMax: 120 },
                   { name: "Total Protein", value: 6.5, unit: "g/dL", status: "OPTIMAL", min: 4.1, max: 9.9, aevMin: 5.0, aevMax: 7.4 },
-                  { name: "Triglyceride", value: 43, unit: "mg/dL", status: "ATTENTION", min: 0, max: 370, aevMin: 50, aevMax: 150 }
+                  { name: "Triglyceride", value: 175, unit: "mg/dL", status: "ATTENTION", min: 0, max: 370, aevMin: 50, aevMax: 150 }
                 ]}
               />
               <PillarAccordion
                 title="Blood Health"
                 icon={Activity}
-                good={3} attention={0} action={2}
+                good={4} attention={1} action={0}
                 signals={[
-                  { name: "HCT", value: 33, unit: "%", status: "ACTION", min: 28.8, max: 67.2, aevMin: 37, aevMax: 55 },
-                  { name: "HGB", value: 11.2, unit: "g/dL", status: "ACTION", min: 9.6, max: 22.8, aevMin: 12, aevMax: 18 },
+                  { name: "HCT", value: 48, unit: "%", status: "OPTIMAL", min: 28.8, max: 67.2, aevMin: 37, aevMax: 55 },
+                  { name: "HGB", value: 16.2, unit: "g/dL", status: "OPTIMAL", min: 9.6, max: 22.8, aevMin: 12, aevMax: 18 },
                   { name: "Platelet Count", value: 269, unit: "x10³/uL", status: "OPTIMAL", min: 101, max: 469, aevMin: 200, aevMax: 500 },
                   { name: "RBC", value: 6.6, unit: "x10⁶/uL", status: "OPTIMAL", min: 3.4, max: 10.7, aevMin: 5.5, aevMax: 8.5 },
-                  { name: "WBC", value: 5.3, unit: "x10³/uL", status: "OPTIMAL", min: 0.6, max: 18.9, aevMin: 5.0, aevMax: 14.0 }
+                  { name: "WBC", value: 14.5, unit: "x10³/uL", status: "ATTENTION", min: 0.6, max: 18.9, aevMin: 6.0, aevMax: 13.0 }
                 ]}
               />
               <PillarAccordion
@@ -595,13 +595,13 @@ export default function Dashboard() {
               <PillarAccordion
                 title="Metabolic"
                 icon={Zap}
-                good={4} attention={0} action={1}
+                good={5} attention={0} action={0}
                 signals={[
-                  { name: "Calcium", value: 9.2, unit: "mg/dL", status: "OPTIMAL", min: 8.2, max: 12.2, aevMin: 9.0, aevMax: 11.5 },
-                  { name: "Chloride", value: 125, unit: "mEq/L", status: "ACTION", min: 96.6, max: 125.4, aevMin: 105, aevMax: 115 },
+                  { name: "Calcium", value: 10.1, unit: "mg/dL", status: "OPTIMAL", min: 8.2, max: 12.2, aevMin: 9.0, aevMax: 11.5 },
+                  { name: "Chloride", value: 110, unit: "mEq/L", status: "OPTIMAL", min: 96.6, max: 125.4, aevMin: 105, aevMax: 115 },
                   { name: "Potassium", value: 4.4, unit: "mEq/L", status: "OPTIMAL", min: 3.0, max: 6.1, aevMin: 3.6, aevMax: 5.5 },
                   { name: "Magnesium", value: 2.2, unit: "mEq/L", status: "OPTIMAL", min: 1.2, max: 2.8, aevMin: 1.5, aevMax: 2.5 },
-                  { name: "Sodium", value: 153, unit: "mEq/L", status: "OPTIMAL", min: 134.5, max: 158.5, aevMin: 144, aevMax: 156 }
+                  { name: "Sodium", value: 148, unit: "mEq/L", status: "OPTIMAL", min: 134.5, max: 158.5, aevMin: 144, aevMax: 156 }
                 ]}
               />
               <PillarAccordion
@@ -619,23 +619,23 @@ export default function Dashboard() {
               <PillarAccordion
                 title="Other"
                 icon={MoreHorizontal}
-                good={6} attention={5} action={4}
+                good={13} attention={2} action={0}
                 signals={[
                   { name: "Bilirubin (Total)", value: 0.2, unit: "mg/dL", status: "OPTIMAL", min: 0.0, max: 0.9, aevMin: 0.0, aevMax: 0.4 },
                   { name: "GGT", value: 4, unit: "IU/L", status: "OPTIMAL", min: 0, max: 15, aevMin: 0, aevMax: 7 },
                   { name: "Creatine Kinase", value: 95, unit: "IU/L", status: "OPTIMAL", min: 0, max: 400, aevMin: 50, aevMax: 275 },
-                  { name: "Lipase", value: 350, unit: "IU/L", status: "OPTIMAL", min: 0, max: 2500, aevMin: 200, aevMax: 1800 },
+                  { name: "Lipase", value: 950, unit: "IU/L", status: "OPTIMAL", min: 0, max: 2500, aevMin: 200, aevMax: 1800 },
                   { name: "Amylase", value: 850, unit: "IU/L", status: "OPTIMAL", min: 0, max: 2000, aevMin: 400, aevMax: 1200 },
                   { name: "Cobalamin (B12)", value: 450, unit: "ng/L", status: "OPTIMAL", min: 100, max: 1500, aevMin: 250, aevMax: 900 },
                   { name: "CRP", value: 14, unit: "mg/L", status: "ATTENTION", min: 0, max: 30, aevMin: 0, aevMax: 10 },
-                  { name: "Free T4", value: 0.9, unit: "ng/dL", status: "ATTENTION", min: 0.0, max: 5.0, aevMin: 0.8, aevMax: 3.5 },
-                  { name: "Fructosamine", value: 305, unit: "umol/L", status: "ATTENTION", min: 100, max: 500, aevMin: 200, aevMax: 300 },
-                  { name: "Folate", value: 6.5, unit: "ug/L", status: "ATTENTION", min: 0, max: 25, aevMin: 7.5, aevMax: 17.5 },
-                  { name: "RDW", value: 14.2, unit: "%", status: "ATTENTION", min: 10, max: 20, aevMin: 11, aevMax: 14 },
-                  { name: "TLI", value: 4.5, unit: "ug/L", status: "ACTION", min: 0, max: 45, aevMin: 5.7, aevMax: 45 },
-                  { name: "Cortisol (baseline)", value: 5.8, unit: "ug/dL", status: "ACTION", min: 0, max: 15, aevMin: 1, aevMax: 5 },
-                  { name: "cPL", value: 410, unit: "ug/L", status: "ACTION", min: 0, max: 1000, aevMin: 0, aevMax: 200 },
-                  { name: "Reticulocytes", value: 135, unit: "K/uL", status: "ACTION", min: 0, max: 200, aevMin: 10, aevMax: 110 }
+                  { name: "Free T4", value: 1.8, unit: "ng/dL", status: "OPTIMAL", min: 0.0, max: 5.0, aevMin: 0.8, aevMax: 3.5 },
+                  { name: "Fructosamine", value: 265, unit: "umol/L", status: "OPTIMAL", min: 100, max: 500, aevMin: 200, aevMax: 320 },
+                  { name: "Folate", value: 12, unit: "ug/L", status: "OPTIMAL", min: 0, max: 25, aevMin: 7.5, aevMax: 17.5 },
+                  { name: "RDW", value: 13.2, unit: "%", status: "OPTIMAL", min: 10, max: 20, aevMin: 11, aevMax: 14 },
+                  { name: "TLI", value: 22, unit: "ug/L", status: "OPTIMAL", min: 0, max: 45, aevMin: 5.7, aevMax: 45 },
+                  { name: "Cortisol (baseline)", value: 3.2, unit: "ug/dL", status: "OPTIMAL", min: 0, max: 15, aevMin: 1, aevMax: 5 },
+                  { name: "cPL", value: 235, unit: "ug/L", status: "ATTENTION", min: 0, max: 1000, aevMin: 0, aevMax: 200 },
+                  { name: "Reticulocytes", value: 65, unit: "K/uL", status: "OPTIMAL", min: 0, max: 200, aevMin: 10, aevMax: 110 }
                 ]}
               />
            </div>
