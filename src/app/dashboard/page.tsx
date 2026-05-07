@@ -546,35 +546,97 @@ export default function Dashboard() {
 
            {/* Pillars */}
            <div>
-              <PillarAccordion 
-                title="Vitality" 
+              <PillarAccordion
+                title="Vitality"
                 icon={Heart}
                 good={5} attention={0} action={0}
                 signals={[
                   { name: "Albumin", value: 3.5, unit: "g/dL", status: "OPTIMAL", min: 2.0, max: 5.0, aevMin: 2.7, aevMax: 4.0 },
                   { name: "Alk Phos", value: 65, unit: "IU/L", status: "OPTIMAL", min: 0, max: 200, aevMin: 20, aevMax: 130 },
-                  { name: "ALT (SGPT)", value: 72, unit: "IU/L", status: "ATTENTION", min: 0, max: 150, aevMin: 21, aevMax: 65 },
+                  { name: "ALT (SGPT)", value: 55, unit: "IU/L", status: "OPTIMAL", min: 0, max: 150, aevMin: 21, aevMax: 100 },
                   { name: "AST (SGOT)", value: 32, unit: "IU/L", status: "OPTIMAL", min: 0, max: 80, aevMin: 15, aevMax: 55 },
                   { name: "Total T4", value: 2.2, unit: "ug/dL", status: "OPTIMAL", min: 0.0, max: 4.5, aevMin: 1.0, aevMax: 3.5 }
                 ]}
               />
-              <PillarAccordion 
-                title="Nutrition" 
-                icon={Activity}
+              <PillarAccordion
+                title="Nutrition"
+                icon={Utensils}
                 good={3} attention={1} action={0}
-                signals={[]}
+                signals={[
+                  { name: "Cholesterol", value: 107, unit: "mg/dL", status: "OPTIMAL", min: 22, max: 394, aevMin: 110, aevMax: 300 },
+                  { name: "Glucose", value: 104, unit: "mg/dL", status: "OPTIMAL", min: 32, max: 202, aevMin: 70, aevMax: 120 },
+                  { name: "Total Protein", value: 6.5, unit: "g/dL", status: "OPTIMAL", min: 4.1, max: 9.9, aevMin: 5.0, aevMax: 7.4 },
+                  { name: "Triglyceride", value: 43, unit: "mg/dL", status: "ATTENTION", min: 0, max: 370, aevMin: 50, aevMax: 150 }
+                ]}
               />
-              <PillarAccordion 
-                title="Kidney & Urinary" 
+              <PillarAccordion
+                title="Blood Health"
+                icon={Activity}
+                good={3} attention={0} action={2}
+                signals={[
+                  { name: "HCT", value: 33, unit: "%", status: "ACTION", min: 28.8, max: 67.2, aevMin: 37, aevMax: 55 },
+                  { name: "HGB", value: 11.2, unit: "g/dL", status: "ACTION", min: 9.6, max: 22.8, aevMin: 12, aevMax: 18 },
+                  { name: "Platelet Count", value: 269, unit: "x10³/uL", status: "OPTIMAL", min: 101, max: 469, aevMin: 200, aevMax: 500 },
+                  { name: "RBC", value: 6.6, unit: "x10⁶/uL", status: "OPTIMAL", min: 3.4, max: 10.7, aevMin: 5.5, aevMax: 8.5 },
+                  { name: "WBC", value: 5.3, unit: "x10³/uL", status: "OPTIMAL", min: 0.6, max: 18.9, aevMin: 5.0, aevMax: 14.0 }
+                ]}
+              />
+              <PillarAccordion
+                title="Kidney & Urinary"
                 icon={Droplets}
                 good={4} attention={0} action={0}
-                signals={[]}
+                signals={[
+                  { name: "BUN", value: 27, unit: "mg/dL", status: "OPTIMAL", min: 7.4, max: 42.6, aevMin: 7, aevMax: 27 },
+                  { name: "Creatinine", value: 0.9, unit: "mg/dL", status: "OPTIMAL", min: 0.1, max: 2.9, aevMin: 0.5, aevMax: 1.6 },
+                  { name: "Phosphorus", value: 3.2, unit: "mg/dL", status: "OPTIMAL", min: 1.4, max: 7.0, aevMin: 2.5, aevMax: 6.0 },
+                  { name: "SDMA", value: 8.9, unit: "ug/dL", status: "OPTIMAL", min: 0, max: 19.5, aevMin: 0, aevMax: 14 }
+                ]}
               />
-              <PillarAccordion 
-                title="Immune Defense" 
+              <PillarAccordion
+                title="Metabolic"
+                icon={Zap}
+                good={4} attention={0} action={1}
+                signals={[
+                  { name: "Calcium", value: 9.2, unit: "mg/dL", status: "OPTIMAL", min: 8.2, max: 12.2, aevMin: 9.0, aevMax: 11.5 },
+                  { name: "Chloride", value: 125, unit: "mEq/L", status: "ACTION", min: 96.6, max: 125.4, aevMin: 105, aevMax: 115 },
+                  { name: "Potassium", value: 4.4, unit: "mEq/L", status: "OPTIMAL", min: 3.0, max: 6.1, aevMin: 3.6, aevMax: 5.5 },
+                  { name: "Magnesium", value: 2.2, unit: "mEq/L", status: "OPTIMAL", min: 1.2, max: 2.8, aevMin: 1.5, aevMax: 2.5 },
+                  { name: "Sodium", value: 153, unit: "mEq/L", status: "OPTIMAL", min: 134.5, max: 158.5, aevMin: 144, aevMax: 156 }
+                ]}
+              />
+              <PillarAccordion
+                title="Immune Defense"
                 icon={Shield}
                 good={5} attention={0} action={0}
-                signals={[]}
+                signals={[
+                  { name: "Eosinophils", value: 530, unit: "/uL", status: "OPTIMAL", min: 0, max: 1560, aevMin: 100, aevMax: 1250 },
+                  { name: "Lymphocytes", value: 1537, unit: "/uL", status: "OPTIMAL", min: 0, max: 5643, aevMin: 1000, aevMax: 4800 },
+                  { name: "Monocytes", value: 106, unit: "/uL", status: "OPTIMAL", min: 0, max: 1092, aevMin: 80, aevMax: 800 },
+                  { name: "Neutrophils", value: 3127, unit: "/uL", status: "OPTIMAL", min: 0, max: 13162, aevMin: 3000, aevMax: 11500 },
+                  { name: "Globulin", value: 3.3, unit: "g/dL", status: "OPTIMAL", min: 1.4, max: 6.2, aevMin: 2.5, aevMax: 4.5 }
+                ]}
+              />
+              <PillarAccordion
+                title="Other"
+                icon={MoreHorizontal}
+                good={6} attention={5} action={4}
+                signals={[
+                  { name: "Bilirubin (Total)", value: 0.2, unit: "mg/dL", status: "OPTIMAL", min: 0.0, max: 0.9, aevMin: 0.0, aevMax: 0.4 },
+                  { name: "GGT", value: 4, unit: "IU/L", status: "OPTIMAL", min: 0, max: 15, aevMin: 0, aevMax: 7 },
+                  { name: "Creatine Kinase", value: 95, unit: "IU/L", status: "OPTIMAL", min: 0, max: 400, aevMin: 50, aevMax: 275 },
+                  { name: "Lipase", value: 350, unit: "IU/L", status: "OPTIMAL", min: 0, max: 2500, aevMin: 200, aevMax: 1800 },
+                  { name: "Amylase", value: 850, unit: "IU/L", status: "OPTIMAL", min: 0, max: 2000, aevMin: 400, aevMax: 1200 },
+                  { name: "Cobalamin (B12)", value: 450, unit: "ng/L", status: "OPTIMAL", min: 100, max: 1500, aevMin: 250, aevMax: 900 },
+                  { name: "CRP", value: 14, unit: "mg/L", status: "ATTENTION", min: 0, max: 30, aevMin: 0, aevMax: 10 },
+                  { name: "Free T4", value: 0.9, unit: "ng/dL", status: "ATTENTION", min: 0.0, max: 5.0, aevMin: 0.8, aevMax: 3.5 },
+                  { name: "Fructosamine", value: 305, unit: "umol/L", status: "ATTENTION", min: 100, max: 500, aevMin: 200, aevMax: 300 },
+                  { name: "Folate", value: 6.5, unit: "ug/L", status: "ATTENTION", min: 0, max: 25, aevMin: 7.5, aevMax: 17.5 },
+                  { name: "RDW", value: 14.2, unit: "%", status: "ATTENTION", min: 10, max: 20, aevMin: 11, aevMax: 14 },
+                  { name: "TLI", value: 4.5, unit: "ug/L", status: "ACTION", min: 0, max: 45, aevMin: 5.7, aevMax: 45 },
+                  { name: "Cortisol (baseline)", value: 5.8, unit: "ug/dL", status: "ACTION", min: 0, max: 15, aevMin: 1, aevMax: 5 },
+                  { name: "cPL", value: 410, unit: "ug/L", status: "ACTION", min: 0, max: 1000, aevMin: 0, aevMax: 200 },
+                  { name: "Reticulocytes", value: 135, unit: "K/uL", status: "ACTION", min: 0, max: 200, aevMin: 10, aevMax: 110 }
+                ]}
               />
            </div>
         </div>
